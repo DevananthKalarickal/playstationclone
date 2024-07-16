@@ -1,0 +1,406 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Josefin+Sans&family=Lexend&family=Montserrat:wght@400;500;600&family=Roboto+Condensed:wght@300;400&family=Roboto+Mono&family=Roboto:wght@100;400&family=Russo+One&family=Yantramanav&display=swap");
+
+/* Global Styles */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --ms_col_first: #8a8a8a;
+    --ms_col_sec: #0070D1;
+    --ms_col_third: #cd3d0f;
+    --ms_col_fourth: #BEBCBB;
+    --ms_col_fifth: #1F1F1F;
+    --ms_title_size: 2.5rem;
+    --ms_sub_title_size: 1.3rem;
+}
+.navbar{
+    background-color: white;
+ /* background-image: linear-gradient(to right, white, gray);*/
+}
+.ms_dropdown_menu{
+    width: 100%;
+    border-radius: 0!important;
+    margin-top: -0.5px !important;
+    border: 0 solid black !important; 
+    overflow-x: hidden;
+}
+
+.ms_border_bot_drop{
+    border-bottom: 1px solid #8a8a8a;    
+}
+
+.dropdown-toggle::after{
+    background-image: url(img/chevron-down-solid.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    border: 0;
+    content: "";
+    transform: translateY(6px);
+    transition: 0.2s;
+}
+
+.dropdown-toggle.show::after{
+    transform: rotate(180deg);
+    /* vertical-align: bottom; */
+}
+
+/* Header */
+.ms_header_sony {
+    width: 100px;
+}
+
+/* Jumbotron */
+.ms_jumbotron, .ms_jumbotro, .ms_jumbotr {
+    height: 900px;
+}
+.ms_jumbotron {
+    background-image: url(https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/aqZdSwWyy9JcQ66BxHDKrky6.jpg);
+}
+.ms_jumbotro {
+    background-image: url(./img/uncharted.jpg);
+}
+.ms_jumbotr {
+    background-image: url(./img/jumbo-bg.png);
+}
+.ms_jumbotron, .ms_jumbotro, .ms_jumbotr {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ms_jumbo_content {
+    margin-top: 350px;
+    margin-bottom: 70px;
+}
+
+/* Hero */
+.ms_hero {
+    background-image: url(./img/hero.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Buttons */
+.ms_login_button:hover {
+    border: 3px solid white !important;
+    outline: 3px solid #1c1f23 !important;
+}
+
+.ms_button_red:hover {
+    border: 3px solid black !important;
+    outline: 3px solid var(--ms_col_third);
+}
+
+.ms_button_blue:hover {
+    border: 3px solid white;
+    outline: 3px solid var(--ms_col_sec);
+}
+
+
+
+
+/* Media Queries */
+@media all and (min-width: 1900px) {
+    .ms_jumbo_content {
+        margin-top: 600px;
+    }
+}
+
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: #f5f7fa;
+  }
+  
+  .social .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    margin: 0px auto;
+    column-gap: 50px;
+  }
+  
+  .social .social-media a i {
+    color: black;
+  }
+  
+  .social .social-media a i:hover {
+    color: blue;
+  }
+/* Collection Section */
+.collection {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+transform:translateX(0);
+}
+
+.collection img {
+    width: 260px;
+    height: 140px;
+    padding: 5px;
+    border-radius: 30px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.collection img:hover {
+    opacity: 1;
+    transform: translate(0, -8px);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, .4);
+    border: 3px solid rgba(0, 0, 0, 0);
+    outline: 3px solid var(--ms_col_sec);
+}
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    height: 650px;
+    background-color: rgb(0, 67, 156);
+}
+
+.footer img {
+    padding: 50px 0 0 88px;
+    width: 240px;
+    height: 90px;
+}
+
+.footer .list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    line-height: 30px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(181, 179, 179, 0.563);
+    border-bottom: 1px solid rgba(181, 179, 179, 0.563);
+    column-gap: 96px;
+    padding: 5px;
+}
+
+.footer .list .list1 {
+    list-style: none;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+}
+
+.footer .list .list1 p {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer .list .list1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.footer .list .list1 a i {
+    font-size: 18px;
+}
+
+/* Entertainment Section */
+.entertainment {
+    width: 86%;
+    margin: 0 auto;
+    color: white;
+}
+
+.entertainment .inside-ent img {
+    width: 250px;
+    height: 110px;
+    margin-left: -120px;
+    margin-bottom: 50px;
+}
+
+.entertainment .inside-ent {
+    border-bottom: 1px solid rgba(181, 179, 179, 0.563);
+    padding: 15px;
+}
+
+.entertainment .inside-ent p {
+    font-size: 12px;
+}
+
+.entertainment .inside-ent p a {
+    color: white;
+}
+
+.entertainment .inside-ent p a:hover {
+    opacity: 0.7;
+}
+
+/* PS5 Section */
+.ps5 {
+    height: 925px;
+    background-color: black;
+    color: white;
+}
+
+.ps5 .great {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.ps5 .great h1 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.ps5 .great button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+}
+ 
+    .ps5 .great button:hover {
+        border: 3px solid black !important;
+        outline: 3px solid var(--ms_col_third);
+    }
+
+.ps5 .collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.ps5 .collection .cont1 img {
+    width: 190px;
+    height: 230px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.ps5 .collection .cont1 img:hover {
+    width: 193px;
+    height: 233px;
+    opacity: 0.6;
+}
+
+.game {
+    padding-top: 70px;
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 254, 254),
+      rgb(92, 86, 86)
+    );
+  }
+  
+  .game h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .game .game-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    /* background-color: rgba(248, 242, 242, 0.674); */
+    column-gap: 5px;
+    padding-top: 50px;
+    height: 500px;
+  
+    /* white-space: nowrap; */
+  }
+  
+  .game-cards::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .game .game-cards .card1 {
+    width: 400px;
+    height: 450px;
+    padding: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+  }
+  
+  .game .game-cards .card1:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .game .game-cards .card1 img {
+    width: 400px;
+    border-radius: 15px;
+  }
+  
+  .game .game-cards .card1 img:hover {
+    box-shadow: 2px 2px 26px rgb(101, 98, 98);
+  }
+  
+  .game .game-cards .card1 h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-size: 100;
+  }
+  
+  .game .game-cards .card1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+
+
+
+.ms_grayscale{
+    filter: grayscale(1);
+}
+
+.ms_border_bot{
+    border-bottom: 3px solid var(--ms_col_sec);
+}.ms_ps_plus{
+    background-color: var(--ms_col_fourth);
+}
+
+.ms_ps_plus_img{
+    background-color: var(--ms_col_fourth);
+}
+
+/* ps-now */
+
+.ms_ps_now{
+    background-color: #161c3b;
+}
+.ms_button_plus{
+    background-color: #d9dadc !important;
+    display: inline-block;
+    border: 3px solid #bebcbb;
+    color: #2d64e6;
+}
+
+.ms_button_plus:hover{
+    border: 3px solid #bebcbb;
+    outline: 3px solid #d9dadc;
+    color: #2d64e6;
+}
+.ms_ps5_hover{
+    transition: .5;
+}
+
+.ms_ps5_hover:hover{
+    filter: grayscale(0);
+    border-bottom: 3px solid var(--ms_col_sec);
+    cursor: pointer;
+}

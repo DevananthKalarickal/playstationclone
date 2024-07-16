@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation</title>
+    <link rel="icon" type="image/x-icon" href="/img/play_logo.svg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+</head>
+
+<body>
+    <header class="sticky-top bg-white">
+        <div class="ms_header_top container-fluid bg-black py-2">
+            <div class="row justify-content-end">
+                <div class="col-2 d-flex justify-content-end">
+                    <img class="ms_header_sony" src="img/sony_logo.svg" alt="Sony Logo">
+                </div>
+            </div>
+        </div>
+        <div class="ms_header_bot">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg position-static">
+                    <div class="container-fluid">
+                        <a class="navbar-brand fs-3 fw-bold" href="#"><img src="img/play_logo.svg" alt="PlayStation Logo" class=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-black games-link" href="#" style="transition: transform 0.2s;">Games</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-black hardware-link" href="#" style="transition: transform 1s;">Hardware</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-black service-link" href="#" style="transition: transform 0.2s;">Service</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-black news-link" href="#" style="transition: transform 0.2s;">News</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-black shop-link" href="#" style="transition: transform 0.2s;">Shop</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-black support-link" href="#" style="transition: transform 0.2s;">Support</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                            <li class="nav-item dropdown position-static">
+                                <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    My playstation
+                                </a>
+                                <ul class="dropdown-menu ms_dropdown_menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <ul class="d-flex justify-content-center py-2 ms_border_bot_drop" style="list-style: none;">
+                                        <li class="d-flex justify-content-center align-items-center flex-column ms_hover_dropdown_item">
+                                            <img src="img/play-menu-ico.png" class="w-50" alt="play-menu-ico">
+                                            <a class="dropdown-item" href="#">PlayStation 5</a>
+                                        </li>
+                                        <li class="d-flex justify-content-center align-items-center flex-column ms_hover_dropdown_item">
+                                            <img src="img/play-menu-ico.png" class="w-50" alt="play-menu-ico">
+                                            <a class="dropdown-item" href="#">PlayStation 4</a>
+                                        </li>
+                                        <li class="d-flex justify-content-center align-items-center flex-column ms_hover_dropdown_item">
+                                            <img src="img/play-menu-ico.png" class="w-50" alt="play-menu-ico">
+                                            <a class="dropdown-item" href="#">Playstation 3</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="d-flex justify-content-center py-2" style="list-style: none;">
+                                        <li class="px-2 ms_hover_link">Shop Link</li>
+                                        <li class="px-2 ms_hover_link">Shop Link</li>
+                                        <li class="px-2 ms_hover_link">Shop Link</li>
+                                    </ul>
+                                    
+                                
+                            </u1>
+                            </li>
+                            <ul class="navbar-nav">
+                                <li class="nav-item text-center px-2 mb-2 m-lg-0 mx-2">
+                                    <button type="button" class="btn btn-dark rounded-5 ms_login_button">Login</button>
+                                </li>
+                                <li class="nav-item justify-content-center d-flex align-items-center px-2 text-center mb-2 m-lg-0 mx-2">
+                                    <i class="bi bi-search"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <style>
+                            .games-link:hover {
+                                transform: scale(1.1);
+                                color: #0d6efd !important;
+                                text-decoration: underline; /* Example transformation */
+                            }
+                        
+                            .hardware-link:hover {
+                                transform: scale(1.1);
+                                color: #0d6efd !important;
+                                text-decoration: underline;
+                                color: #0d6efd !important;
+                                text-decoration: underline; /* Example transformation */
+                            }
+                        
+                            .service-link:hover {
+                                transform: scale(1.1); 
+                                color: #0d6efd !important;
+                                text-decoration: underline;/* Example transformation */
+                            }
+                        
+                            .news-link:hover {
+                                transform: scale(1.1);
+                                color: #0d6efd !important;
+                                text-decoration: underline; /* Example transformation */
+                            }
+                        
+                            .shop-link:hover {
+                                transform: scale(1.1); 
+                                color: #0d6efd !important;
+                                text-decoration: underline;/* Example transformation */
+                            }
+                        
+                            .support-link:hover {
+                                transform: scale(1.1); /* Example transformation */
+                            }
+                         
+                       
+
+                        </style>
+                        
+            
+                    </div>
+                </nav>
+
+
+
+
+
+
+
+
+
+        
+
+
+      
+    </header>
+
+    <main>
+        <section>
+        <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active ms_jumbotron" data-aos="fade-up">
+                    <div class="container-fluid container-lg">
+                        <div class="row">
+                            <div class="col-11 ms-sm-3 ms-lg-5 col-lg-4 ms_jumbo_content">
+                                <img src="img/God-Of-War-Ragnarok-Logo-PNG-HD.webp" alt="Logo" class="w-75 mb-3">
+                                <h2 class="text-white mb-3 ms_title_size"></h2>
+                                <span class="text-white mb-3 d-inline-block">Unleash the fury of the gods in an epic Norse saga, where legends clash and realms tremble, only on PS5</span>
+                                <button type="button" class="btn btn-danger ms_button_red rounded-5">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="carousel-item ms_jumbotr" data-aos="fade-right">
+                    <div class="container-fluid container-lg">
+                        <div class="row">
+                            <div class="col-11 ms-sm-3 ms-lg-5 col-lg-4 ms_jumbo_content">
+                                <img src="img/returnal-hero-banner-logo.png" alt="Logo" class="w-75 mb-3">
+                                <h2 class="text-white mb-3 ms_title_size"></h2>
+                                <span class="text-white mb-3 d-inline-block">Embark on a cosmic odyssey in Returnal, where gods rage, legends collide, and dimensions quake. Only on PS5.</span>
+                                <button type="button" class="btn btn-danger ms_button_red rounded-5">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ms_jumbotro" data-aos="fade-left">
+                    <div class="container-fluid container-lg">
+                        <div class="row">
+                            <div class="col-11 ms-sm-3 ms-lg-5 col-lg-4 ms_jumbo_content">
+                                <img src="img/unchart.png" alt="Logo" class="w-75 mb-3"> <!-- Adjusted mb-0 to reduce margin -->
+                                <h2 class="text-white mb-0 ms_title_size"></h2>
+                                <span class="text-white mb-0 d-inline-block">Dive into the sprawling world of GTA 5: where crime reigns, fortunes await, and the city pulses with life. Only on PS5.</span>
+                                <button type="button" class="btn btn-danger ms_button_red rounded-5">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </section>
+     
+        <section>
+            <div class="collection">
+              <img src="https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-keyart-01-en-31may23?$1200px$" alt="Spider-Man 2 Keyart" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+              <img src="https://gmedia.playstation.com/is/image/SIEPDC/FC24-keyart-01-en-03jul23?$1200px$" alt="FC24 Keyart" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+              <img src="https://gmedia.playstation.com/is/image/SIEPDC/helldivers-2-keyart-01-en-20jul23?$1200px$" alt="Helldivers 2 Keyart" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+              <img src="https://gmedia.playstation.com/is/image/SIEPDC/tower-of-fantasy-3.2-keyart-01-en-21sep23?$1200px$" alt="Tower of Fantasy Keyart" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+              <img src="https://gmedia.playstation.com/is/image/SIEPDC/cyberpunk-2077-phantom-liberty-keyart-01-en-07aug23?$1200px$" alt="Cyberpunk 2077 Phantom Liberty Keyart" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+            </div>
+          </section>
+          
+
+        <section class="py-5" data-aos="fade-up">
+            <div class="container-fluid container-lg">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h5 style="color: #0070D1; font-size: 1rem;">PLAY HAS NO LIMITS</h5>
+                        <h2 class="ms_title_size mb-3">Here is the PlayStation 5</h2>
+                        <span class="ms_subtitle_size">Dive into new, completely unexpected gaming possibilities</span>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-md-4">
+                        <h2 class="ms_title_size mb-4">PlayStation 5 Console</h2>
+                        <span class="ms_subtitle_size d-inline-block mb-4">Experience the new generation of incredible PlayStation games.</span>
+                        <button type="button" class="btn btn-primary ms_button_blue rounded-5">More Information</button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img class="img-fluid" src="img/playstation-5-thumb.png" alt="PlayStation 5">
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-4 justify-content-md-center g-2">
+                <div class="ms_border_bot col-4 col-md-2 d-flex flex-column align-items-center p-4 ms_ps5_hover">
+                    <img src="img/playstation-5-thumb.png" alt="ps5" class="img-fluid">
+                    <div class="d-none d-md-block text-center">PS5 Console</div>
+                </div>
+                <div class="ms_grayscale col-4 col-md-2 d-flex flex-column align-items-center p-4 ms_ps5_hover">
+                    <img src="img/joypad-thumb.png" alt="controller" class="img-fluid">
+                    <div class="d-none d-md-block text-center">Wireless DualSense™ Controller</div>
+                </div>
+                <div class="ms_grayscale col-4 col-md-2 d-flex flex-column align-items-center p-4 ms_ps5_hover">
+                    <img src="img/headset-thumb.png" alt="" class="img-fluid">
+                    <div class="d-none d-md-block text-center">PULSE 3D™ Wireless Headset</div>
+                </div>
+                <div class="ms_grayscale col-4 col-md-2 d-flex flex-column align-items-center p-4 ms_ps5_hover">
+                    <img src="img/remote-thumb.png" alt="" class="img-fluid">
+                    <div class="d-none d-md-block text-center">Media Remote</div>
+                </div>
+                <div class="ms_grayscale col-4 col-md-2 d-flex flex-column align-items-center p-4 ms_ps5_hover">
+                    <img src="img/camera-thumb.jpg" alt="" class="img-fluid">
+                    <div class="d-none d-md-block text-center">HD Camera</div>
+                </div>
+            </div>
+            </div>
+            </section>
+            <section class="ms_ps_plus mt-5 "data-aos="fade-up">
+                <div class="container-fluid container-lg">
+                    <div class="row px-4 align-items-center">
+                        <div class="col-12 col-md-4 py-5 ">
+                            <img src="img/ps-plus-logo.png" alt="psplus" class="w-50 mb-4">
+                            <div class="mb-3">Enhance your PlayStation experience with access to online multiplayer, monthly games, exclusive discounts, and more.</div>
+                            <button type="button" class="btn btn-secondary ms_button_plus rounded-5">Explore PlayStation Plus</button>
+                        </div>
+                        <div class="col-6 d-none d-md-block flex-grow-1">
+                            <img class="w-100" src="img/ps-plus-april-monthly-games-featured-image-block.png" alt="plus-games">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5">
+                <div class="container-fluid container-lg"data-aos="fade-up">
+                    <div class="row px-4 g-3">
+                        <div class="col-12 text-center ">
+                            <h2 class="mb-3 ms_title_size">Explore PlayStation<span class="ms_registered">®</span> 4</h2>
+                            <span class="ms_subtitle_size">Incredible games and endless entertainment.<br>There's never been a better time to play on your PS4.</span>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="img/ps4-slim-homepage-image-block.jpg" alt="ps4" class="img-fluid mb-3">
+                            <h2 class="mb-3 ms_title_size">PlayStation 4</h2>
+                            <span class="ms_subtitle_size d-block mb-3">Incredible games live on PS4, with 1 TB of storage space.</span>
+                            <button type="button" class="btn btn-primary ms_button_blue rounded-5" style="display: block;">Learn More</button>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="img/double11-202010-tw-psvr.jpg" alt="ps4" class="img-fluid mb-3">
+                            <h2 class="mb-3 ms_title_size">PlayStation VR</h2>
+                            <span class="ms_subtitle_size d-block mb-3">Over 500 titles and game experiences. Discover them all.</span>
+                            <button type="button" class="btn btn-primary ms_button_blue rounded-5" style="display: block;">Learn More</button>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="img/dualshock-4-listing-thumb.jpg" alt="ps4" class="img-fluid mb-3">
+                            <h2 class="mb-3 ms_title_size">Accessories</h2>
+                            <span class="ms_subtitle_size d-block mb-3">Enhance your PS4 experience with a range of official accessories.</span>
+                            <button type="button" class="btn btn-primary ms_button_blue rounded-5" style="display: block;">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="ms_hero py-5" data-aos="fade-up">
+                <div class="container-fluid container-lg">
+                    <div class="row">
+                        <div class="col-12 ms-sm-3 ms-lg-5 col-lg-4">
+                            <img src="img/it-takes-two-logo.png" alt="It Takes Two Logo" class="w-50 mb-3">
+                            <h2 class="text-white mb-3 ms_title_size" style="text-shadow: 2px 2px black;">A wild cooperative adventure awaits you</h2>
+                            <span class="text-white mb-3 d-inline-block" style="text-shadow: 2px 2px black;">Find a friend and embark on the craziest adventure of your lives in It Takes Two, a cooperative platform adventure game that turns its genre upside down.</span>
+                            <button type="button" class="btn btn-danger ms_button_red rounded-5">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="game"data-aos="fade-up">
+                  <h1>The latest news from PlayStation Blog</h1>
+                  <div class="game-cards">
+                    <div class="card1">
+                      <img src="img/gran.webp"  class="img-fluid" alt="" />
+                      <h3>
+                        Gran Turismo 7 Update 1.38 adds exciting new cars, Extra Menus,
+                        and a new Scapes location on Sep 28
+                      </h3>
+                      <br />
+                      <p>
+                        Gran Turismo players! The 1.38 update for Gran Turismo 7 arrives
+                        Thursday, September 28 at 11:00pm PST / 8:00am CEST / 3:00pm JST*,
+                        and brings […]
+                      </p>
+                    </div>
+                    <div class="card1">
+                      <img src="img/baldur.webp"  class="img-fluid" alt="" />
+                      <h3>
+                        Baldur’s Gate 3 – Devs share most popular, powerful, and
+                        unconventional multiclass builds with amazing
+                      </h3>
+                      <br />
+                      <p>
+                        In Baldur’s Gate 3, your character’s class build can be as unique
+                        and personalized as your own playstyle. Since we first launched in
+                        August, players have been delving deep […]
+                      </p>
+                    </div>
+                    <div class="card1">
+                      <img src="img/dogma.webp"  class="img-fluid" alt="" />
+                      <h3>
+                        Dragon’s Dogma 2 – hands-on report with Capcom’s upcoming PS5
+                        action-RPG with Dragon mafia
+                      </h3>
+                      <br />
+                      <p>
+                        The original Dragon’s Dogma, released in 2012, gained popularity
+                        as a one-of-a-kind, open-world action RPG. It delivered a polished
+                        combat experience and the freedom to […]
+                      </p>
+                    </div>
+                    <div class="card1">
+                      <img src="img/celebrate.webp"  class="img-fluid" alt="" />
+                      <h3>
+                        Celebrate TLOU Day with new official merchandise with PS5 action
+                        hoodie in the quality
+                      </h3>
+                      <br />
+                      <p>
+                        The Last of Us celebrated its 10th anniversary earlier this year,
+                        and to keep the festivities going throughout 2023, we’re delighted
+                        to reveal a host of new and restocked collectibles for […]
+                      </p>
+                    </div>
+                    <div class="card1">
+                      <img src="img/october.webp"  class="img-fluid"alt="" />
+                      <h3>
+                        PlayStation Plus Monthly Games for October: The Callisto Protocol,
+                        Farming Simulator 22, Weird West
+                      </h3>
+                      <br />
+                      <p>
+                        A new month means a new PlayStation Plus Monthly Games lineup.
+                        October’s titles of The Callisto Protocol, Farming Simulator 22
+                        and Weird West will be available to PlayStation Plus[…]
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            
+        
+
+        <section>
+            <div class="ps5"data-aos="fade-up">
+                <div class="great">
+                    <h1>Great PS4 & PS5 games out now or coming soon</h1>
+                    <br />
+                    <button>New Releases</button>
+                </div>
+
+                <div class="collection">
+                    <div class="cont1">
+                        <img src="img/hogwart.jpeg" alt="Hogwart Legacy">
+                        <p>Hogwart Legacy</p>
+                    </div>
+                    <div class="cont1">
+                        <img src="img/horizon.jpeg" alt="Horizon Forbidden West">
+                        <p>Horizon Forbidden West</p>
+                    </div>
+                    <div class="cont1">
+                        <img src="img/resident.jpeg" alt="Resident Evil 4">
+                        <p>Resident Evil 4</p>
+                    </div>
+                    <div class="cont1">
+                        <img src="img/street.jpeg" alt="Street Fighter 6">
+                        <p>Street Fighter 6</p>
+                    </div>
+                    <div class="cont1">
+                        <img src="img/fifa.jpeg" alt="Fifa 23">
+                        <p>Fifa 23</p>
+                    </div>
+                    <div class="cont1">
+                        <img src="img/diablo.jpeg" alt="Diablo IV">
+                        <p>Diablo IV</p>
+                    </div>
+                </div>
+                <br />
+                <div class="collection">
+                    <div class="cont1">
+                        <img src="img/GOW.jpeg" alt="God Of War">
+                        <p>God Of War</p>
+                    </div>
+                    <div class="cont1">
+                        <img src="img/lastof us.jpeg" alt="The Last Of Us">
+                        <p>The Last Of Us</p>
+                    </div>
+                    <div class="cont1">
+                        <img src="img/callofduty.jpg" alt="Call of Duty">
+                        <p>Call of Duty</p>
+                    </div>
+                    <div class="cont1">
+                        <img src="img/final.jpeg" alt="Final Fantasy XV">
+                        <p>Final Fantasy XV</p>
+                    </div>
+                    <div class="cont1">
+                        <img src="img/starwars.jpeg" alt="Star Wars Jedi">
+                        <p>Star Wars Jedi</p>
+                    </div>
+                    <div class="cont1">
+                        <img src="img/gran.jpeg" alt="Gran Turismo">
+                        <p>Gran Turismo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="social" data-aos="fade-up">
+                <h1 style="text-align: center; font-size: 30px">Follow us on Social media</h1>
+                <br />
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <img src="img/playwithlogo.PNG" alt="PlayStation Logo">
+            <div class="list">
+                <div class="list1">
+                    <p>About</p>
+                    <li><a href="#">About SIE</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">PlayStation Studios</a></li>
+                    <li><a href="#">PlayStation Productions</a></li>
+                    <li><a href="#">Corporate</a></li>
+                </div>
+                <div class="list1">
+                    <p>Products</p>
+                    <li><a href="#">PS5</a></li>
+                    <li><a href="#">PS4</a></li>
+                    <li><a href="#">PS VR2</a></li>
+                    <li><a href="#">PS Plus</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Games</a></li>
+                </div>
+                <div class="list1">
+                    <p>Values</p>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Online safety</a></li>
+                    <li><a href="#">Diversity, equity & inclusion</a></li>
+                </div>
+                <div class="list1">
+                    <p>Support</p>
+                    <li><a href="#">Support hub</a></li>
+                    <li><a href="#">PlayStation Safety</a></li>
+                    <li><a href="#">PSN Status</a></li>
+                    <li><a href="#">PlayStation Repairs</a></li>
+                    <li><a href="#">Password reset</a></li>
+                </div>
+                <div class="list1">
+                    <p>Resources</p>
+                    <li><a href="#">PSN terms of service</a></li>
+                    <li><a href="#">PS Store cancellation policy</a></li>
+                    <li><a href="#">Age ratings</a></li>
+                    <li><a href="#">Health warning</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Glossary</a></li>
+                </div>
+                <div class="list1">
+                    <p>Connect</p>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </div>
+            </div>
+            <div class="entertainment">
+                <div class="inside-ent">
+                    <img src="img/sony-interactive.PNG" alt="Sony Interactive">
+                    <p>© 2024 Sony Interactive Entertainment Europe Limited (SIEE)</p>
+                    <p>
+                        All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners. All rights reserved.
+                        <a href="#">More info</a>
+                    </p>
+                </div>
+                <br />
+                <p><i class="fa-solid fa-earth-americas fa-xl"></i>&nbsp;  India</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- FontAwesome Kit -->
+    <script src="https://kit.fontawesome.com/dcd4fa15c1.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
